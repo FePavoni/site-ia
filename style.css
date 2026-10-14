@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #071C19;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+
+    padding: 50px;
+
+
+
+}
+
+.menu-hamburguer {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+
+.menu-hamburguer span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 1;
+    background-color: #d4af37;
+    transition: transform 0.3s ease;
+}
+
+.menu-hamburguer:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.barra {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+
+    position: absolute;
+    top: 45%;
+    right: 3%;
+
+    width: 250px;
+    padding: 25px;
+
+    background-color: #071C19;
+    border-radius: 50px;
+}
+
+.barra.aberto {
+    display: flex;
+}
+
+.logo h2 {
+    color: #C5A36A;
+}
+
+
+.barra a {
+    text-decoration: none;
+    /* Remove o sublinhado padrão */
+    color: #C5A36A;
+    /* Cor do texto */
+    position: relative;
+
+    /* Cria o risquinho usando um gradiente de fundo */
+    background-image: linear-gradient(#C5A36A, #C5A36A);
+    background-repeat: no-repeat;
+
+    /* Controla o tamanho e a posição inicial do risquinho (largura 0, altura 2px) */
+    background-size: 0% 2px;
+    background-position: bottom left;
+
+    /* Define a velocidade da animação (0.3 segundos) */
+    transition: background-size 0.3s ease-in-out;
+
+    font-size: 20px;
+}
+
+.barra a:hover {
+    background-size: 100% 2px;
+}
+
+.conteudo-inicio {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+    overflow: hidden;
+}
+
+.text-1,
+.p1,
+.p2,
+.btn {
+    position: relative;
+    z-index: 1;
+
+
+}
+
+.text-1 {
+    position: relative;
+
+    left: -5%;
+    margin-bottom: 50px;
+}
+
+.p1 {
+    position: relative;
+    width: 30%;
+
+    color: #fff;
+
+}
+
+.conteudo-inicio h1 {
+    font-size: 7vw;
+    color: #C5A36A;
+    text-shadow: 3px 3px #0A100F;
+
+}
+
+.conteudo-inicio strong {
+    color: #fff;
+}
+
+.conteudo-inicio h2 {
+    text-align: center;
+    font-size: 3vw;
+    color: #ffff;
+}
+
+.p2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fff;
+    width: 50%;
+    text-shadow: 3px 2px #0A100F;
+
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #16423c;
+    border: 1px solid #00cfff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background-color: #00cfff;
+    color: #071c19;
+    box-shadow: 0 0 15px #00cfff;
+}
+
+img {
+    position: relative;
+    left: 25%;
+    top: 40%;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+
+.inicio-2 {
+    position: relative;
+    background-color: #164E50;
+}
+
+.titulo {
+    position: relative;
+    text-align: center;
+    font-size: 8.5vw;
+    color: #947642;
+    text-shadow: 2px 2px #594625;
+}
+.teste{
+    position: relative;
+    z-index: 2;
+}
+
+.conexao {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.aparecer {
+    position: relative;
+    z-index: 1;
+}
+
+
+.aparecer {
+    opacity: 0;
+}
+
+.aparecer.visivel {
+    animation: aparecer 3s ease-in-out forwards;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    justify-content: center;
+
+    gap: 14px;
+
+    width: 100%;
+
+
+    margin-top: 10%;
+    font-size: 2em;
+
+}
+
+.card {
+    background-color: #164E50;
+
+    border: 1px solid #fff;
+    border-radius: 10px;
+
+    padding: 60px;
+    margin-bottom: 40%;
+
+    text-decoration: none;
+    color: #C5A36A;
+
+    display: block;
+
+    transition:
+        border-color .15s ease,
+        background-color .15s ease,
+        transform .15s ease;
+}
+
+.detalhes {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.card:hover {
+    border-color: #4BA8AC;
+
+    background-color: #00cfff;
+
+    box-shadow: 0 0 18px rgba(176, 38, 255, .35);
+
+    transform: translateY(-3px);
+}
+
+.card:hover .detalhes {
+    max-height: 200px;
+    opacity: 1;
+}
+.seçao-3{
+    position: relative;
+    background-color: #fff;
+    
+}
+.historia h2{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 8vw;
+    
+}
+.li1{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+
+    gap: 8px;
+
+}
