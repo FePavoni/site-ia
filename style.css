@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #071C19;
+    background-color:#120D09;
     width: 100%;
     height: 100vh;
 }
@@ -129,7 +129,7 @@ nav {
     position: relative;
 
     left: -5%;
-    margin-bottom: 50px;
+    bottom: 10%;
 }
 
 .p1 {
@@ -171,9 +171,9 @@ nav {
     margin-top: 25px;
     padding: 12px 30px;
     text-decoration: none;
-    color: white;
-    background-color: #16423c;
-    border: 1px solid #00cfff;
+    color: #50331E;
+    background-color: #E0BD7A;
+    border: 1px solid #26180F;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
@@ -211,16 +211,21 @@ img {
     color: #947642;
     text-shadow: 2px 2px #594625;
 }
-.teste{
-    position: relative;
-    z-index: 2;
+
+.braço-m {
+    position: absolute;
+    width: 55%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
-.conexao {
+.braço-h {
     position: absolute;
-    width: 100%;
+    width: 55%;
     top: 50%;
-    left: 50%;
+    left: 21%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
@@ -307,23 +312,225 @@ img {
     max-height: 200px;
     opacity: 1;
 }
-.seçao-3{
-    position: relative;
-    background-color: #fff;
-    
-}
-.historia h2{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    font-size: 8vw;
-    
-}
-.li1{
-    display: flex;
-    align-items: center;
-    padding: 3px;
 
-    gap: 8px;
+.inicio-3 {
+    overflow: hidden;
+    background: radial-gradient(ellipse at 19% 19%, #32251a 0%, transparent 40%), #10100f
+}
+
+.hero-ia {
+    max-width: 1500px;
+    margin: auto;
+    min-height: 790px;
+    display: grid;
+    grid-template-columns: 51% 49%;
+    align-items: center;
+    position: relative
+}
+.arte-ia {
+    position: relative;
+    align-self: stretch;
+    min-height: 690px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.arte-ia:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    background: linear-gradient(transparent, #10100f);
+    pointer-events: none;
+}
+
+.arte-ia img {
+    position: relative;
+    z-index: 0;
+    top: 5%;
+    left:-5%;
+    width: 100%;
+    object-fit: contain;
+}
+.conteudo3 {
+    position: relative;
+    z-index: 2;
+    padding: 90px 8% 90px 2%;
+    animation: subir 1s .2s both;
+    width: 70%;
+    padding: 10px 30px;
+}
+
+.sobretitulo {
+    font-size: 11px;
+    letter-spacing: .24em;
+    font-weight: 700;
+    color:#FFD700;
+}
+
+.linha {
+    display: inline-block;
+    width: 27px;
+    height: 1px;
+    background: #ad8c58;
+    vertical-align: middle;
+    margin: 0 12px
+}
+
+.conteudo3 h2,
+.conteudo3 h3,
+.cabecalho-impactos h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    letter-spacing: -.035em;
+}
+
+.conteudo3 h2 {
+    font-size: clamp(66px, 7vw, 116px);
+    line-height: .9;
+    margin: 35px 0 5px;
+    color: #FFD700;
+}
+
+.conteudo3 h2 em {
+    color:#164E50;
+    font-weight: 400;
+}
+
+.conteudo3 h3 {
+    font-size: clamp(40px, 4.5vw, 72px);
+    line-height: 1.05;
+    margin: 0 0 26px;
+    color: #d4af37;
+}
+
+.separador {
+    width: 75px;
+    height: 1px;
+    background:#00cfff;
+    margin: 30px 0;
+}
+
+.descricao {
+    color: #c7c0b5;
+    max-width: 540px;
+    font-size: 18px;
+    line-height: 1.95;
+}
+
+.secundaria {
+    color: #918c85;
+}
+
+.explorar {
+    display: inline-flex;
+    gap: 35px;
+    align-items: center;
+    margin-top: 22px;
+    border: 1px solid #b99460;
+    border-radius: 20px;
+    padding: 18px 22px;
+    text-decoration: none;
+    color: #50331E;
+    background-color: #B58A4A;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .15em;
+    transition: .3s;
+}
+
+.explorar:hover {
+    background: #26180F;
+    color: #50331E;
+}
+
+.explorar span {
+    font-size: 19px;
+}
+
+.impactos {
+    max-width: 1300px;
+    margin: auto;
+    padding: 105px 35px 90px;
+    border-top: 1px solid #6d593d55;
+    color: #d4af37;
+}
+
+.cabecalho-impactos {
+    text-align: center;
+    margin-bottom: 55px
+}
+
+.cabecalho-impactos h2 {
+    font-size: clamp(42px, 5vw, 70px);
+    margin: 12px 0;
+}
+
+.cabecalho-impactos em {
+    color: var(--ouro);
+}
+
+.grade-impactos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: #7c684233;
+    border: 1px solid #7c684233;
+}
+
+.grade-impactos li {
+    padding: 37px 32px;
+    min-height: 205px;
+    background: #151411;
+    transition: background .3s;
+}
+
+.grade-impactos li:hover {
+    background: #231d15;
+}
+
+.numero {
+    font-size: 12px;
+    color: var(--ouro);
+    letter-spacing: .12em;
+}
+
+.grade-impactos h3 {
+    font-size: 14px;
+    letter-spacing: .14em;
+    margin: 24px 0 12px;
+}
+
+.grade-impactos p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #a9a39a;
+    margin: 0;
+}
+
+.frase-final {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(25px, 3vw, 40px);
+    margin: 85px auto 0;
+}
+
+.frase-final em {
+    color: var(--ouro);
+}
+
+footer{
+    position: relative;
+    top: 0%;
+    bottom:50%;
+    font-size: 8vw;
+    color: #FFD700;
+    margin: 50px;
 
 }
