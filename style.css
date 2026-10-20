@@ -343,10 +343,11 @@ img {
     border-color: #4BA8AC;
 
     background: #231d15;
-    box-shadow: 0 0 18px      #231d15;
+    box-shadow: 0 0 18px #231d15;
 
     transform: translate();
 }
+
 .detalhes::before {
     content: "";
     position: absolute;
@@ -589,119 +590,34 @@ img {
     color: var(--ouro);
 }
 
-
-/* PALETA DE CORES */
-:root {
-    --fundo: #15130F;
-    --fundo-secundario: #21180F;
-    --dourado: #C5A36A;
-    --ouro-brilhante: #D4AF37;
-    --texto: #F0E6D2;
-    --divisoria: #B8A88A;
-}
-
-/* SEÇÃO PRINCIPAL */
-#trilha {
-    background-color: var(--fundo);
-    color: var(--texto);
-    padding: 60px 0;
-    font-family: Georgia, "Times New Roman", serif;
-}
-
-/* TÍTULOS */
-.trilha h2 {
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    z-index: 1;
-
-    color: #D4AF37;
-    font-size: 3rem;
-    font-family: Georgia, "Times New Roman", serif;
-}
-#trilha h3 {
-    color: var(--dourado);
-    font-size: 1.7rem;
-    margin: 40px 20px 20px;
-}
-
-#trilha h4 {
-    color: var(--dourado);
-    font-size: 1.2rem;
-    margin: 0;
-}
-
-/* TEXTOS */
-#trilha p {
-    color: var(--texto);
-    font-size: 1rem;
-    line-height: 1.8;
-    padding: 0px 30px;
-}
-
-/* CARDS */
-#trilha .card {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-
-    padding: 35px 20px;
-    min-height: 120px;
-    box-sizing: border-box;
-
-    border-bottom: 1px solid var(--divisoria);
-    background-color: transparent;
-
-    transition:
-        background-color 0.3s ease,
-        padding-left 0.3s ease;
-}
-
-/* TÍTULO E DESCRIÇÃO LADO A LADO */
-#trilha .card h4 {
-    flex: 0 0 170px;
-}
-
-#trilha .card p {
-    flex: 1;
-    margin: 0;
-}
-
-/* EFEITO AO PASSAR O MOUSE */
-#trilha .card:hover {
-    background-color: var(--fundo-secundario);
-    padding-left: 35px;
-}
-
-/* SEÇÃO DE ENCERRAMENTO */
-#trilha #futuro {
-    background-color: var(--fundo-secundario);
-}
-
-/* LINKS */
-#trilha a {
-    color: var(--ouro-brilhante);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-#trilha a:hover {
-    color: var(--texto);
-}
-
-.trilha {
+.form {
     position: relative;
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    left: 20%;
+    flex-direction: column;
+    width: 50%;
+    background-color: #50331E;
+    padding: 5%;
+    border-radius: 20%;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8),
+        0 0 25px rgba(255, 190, 0, 0.6),
+        0 0 45px rgba(255, 170, 0, 0.4);
+        cursor: pointer;
 }
 
-.trilhaimg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+.form label {
+    margin: 10px;
+    color: #947642;
+    font-size: 3vw;
 }
+
+.form input {
+    padding: 10px;
+    border-radius: 20px;
+}
+
 footer {
     position: relative;
     top: 0%;
