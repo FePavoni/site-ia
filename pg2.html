@@ -1,69 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
     <title>Document</title>
 </head>
+
 <body>
+    <main>
+        <div class="palco-inicio">
+            <header>
+                <nav>
+                    <div class="logo">
+                        <img src="img/Perfil de Cabeça Cibernética Dourada.png" alt="">
+                    </div>
+                    <button class="menu-hamburguer" id="menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div class="barra" id="links">
+                        <a href="index.html">inicio</a>
+                        <a href="pg2.html">Formulario</a>
+                    </div>
+                </nav>
+            </header>
+
+        </div>
+    </main>
+
     <section>
+        <main>
 
-        <div class="conteudo-dois">
-            <img src="img/Encontro entre humano e máquina.png" alt="">
-            <div class="texto-img">
-                <h3>A IA ESTA AO NOSSO REDOR</h3>
-                <h2>- entranto -</h2>
-                <h2>O QUE É INTELIGÊNCIA ARTIFICIAL?</h2>
 
-                <p>A IA aprende com dados, encontra padrões e toma decisões. Parece mágica, mas é matemática, ciência e
-                    muita computação.</p>
-                <div class="timeline-container">
-                    <!-- A linha que conecta os pontos ao fundo -->
-                    <div class="timeline-line-background"></div>
-                    <div class="timeline-line-progress" id="lineProgress"></div>
+            <form action="conteudo-form">
 
-                    <!-- Passo 1 -->
-                    <div class="step-item" data-index="0">
-                        <div class="circle"><span class="icon">📊</span></div>
-                        <span class="step-label">DADOS</span>
-                        <div class="step-card">
-                            <h3>1. Dados</h3>
-                            <p>Coleta massiva de informações e exemplos do mundo real.</p>
-                        </div>
-                    </div>
+                <div class="form">
 
-                    <!-- Passo 2 -->
-                    <div class="step-item" data-index="1">
-                        <div class="circle"><span class="icon">🧠</span></div>
-                        <span class="step-label">APRENDIZADO</span>
-                        <div class="step-card">
-                            <h3>2. Aprendizado</h3>
-                            <p>Identificação de padrões em redes neurais e algoritmos.</p>
-                        </div>
-                    </div>
+                    <label for="nome">Nome e Sobrenome</label>
+                    <input type="text" id="nome" class="input-padrao" required placeholder="Nome e sobrenome">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(99)99999-99999">
 
-                    <!-- Passo 3 -->
-                    <div class="step-item" data-index="2">
-                        <div class="circle"><span class="icon">⚡</span></div>
-                        <span class="step-label">DECISÃO</span>
-                        <div class="step-card">
-                            <h3>3. Decisão</h3>
-                            <p>Processamento rápido para selecionar a melhor resposta.</p>
-                        </div>
-                    </div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="" id="mensagem" cols="68" rows="10"></textarea>
 
-                    <!-- Passo 4 -->
-                    <div class="step-item" data-index="3">
-                        <div class="circle"><span class="icon">🎯</span></div>
-                        <span class="step-label">RESULTADO</span>
-                        <div class="step-card">
-                            <h3>4. Resultado</h3>
-                            <p>Geração de respostas, previsões ou conteúdos finais.</p>
-                        </div>
-                    </div>
+
                 </div>
-                <!-- aqui vamos simular uma conversa com a ia e no scroll fazer ela se afastar-->
-
+            </form>
+        </main>
     </section>
+
+    <script src="scriptpg2.js"></script>
 </body>
+
 </html>

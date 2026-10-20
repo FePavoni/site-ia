@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #231d15;
+    background-image: url(img/Viajante\ entre\ ruínas\ e\ estrelas.png);
+    height: 200%;
+    font-family:"Permanent Marker", cursive;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+
+    padding: 20px;
+
+
+
+}
+
+.menu-hamburguer {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+
+.menu-hamburguer span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 1;
+    background-color: #d4af37;
+    transition: transform 0.3s ease;
+}
+
+.menu-hamburguer:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.barra {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    right: 3%;
+
+
+    padding: 20px;
+
+    background-color: #071C19;
+    border-radius: 25px;
+}
+.barra {
+    display: none;
+}
+
+.barra.aberto {
+    display: flex;
+}
+
+.logo img{
+    color: #C5A36A;
+    height: 50px;
+    background-color: #d4af37;
+    border-radius: 50px;
+    top: 0%;
+}
+
+
+
+.barra a {
+    text-decoration: none;
+    /* Remove o sublinhado padrão */
+    color: #C5A36A;
+    /* Cor do texto */
+    position: relative;
+
+    /* Cria o risquinho usando um gradiente de fundo */
+    background-image: linear-gradient(#C5A36A, #C5A36A);
+    background-repeat: no-repeat;
+
+    /* Controla o tamanho e a posição inicial do risquinho (largura 0, altura 2px) */
+    background-size: 0% 2px;
+    background-position: bottom left;
+
+    /* Define a velocidade da animação (0.3 segundos) */
+    transition: background-size 0.3s ease-in-out;
+
+    font-size: 20px;
+}
+
+.barra a:hover {
+    background-size: 100% 2px;
+}
+
+
+.form {
+
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    padding: 5%;
+    border-radius: 20%;
+    box-shadow: 2px 2px 2px 2px black;
+      
+      
+}
+
+.form label {
+    margin: 10px;
+    color: #947642;
+    font-size: 3vw;
+    text-shadow: 2px 3px black;
+}
+
+.form input {
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+}
+.form textarea{
+
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,9 @@ body {
     background-color: #120D09;
     width: 100%;
     height: 100vh;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header {
@@ -22,7 +27,7 @@ nav {
     justify-content: space-between;
     margin-top: 2%;
 
-    padding: 50px;
+    padding: 20px;
 
 
 
@@ -56,25 +61,29 @@ nav {
 .barra {
     display: none;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 
     position: absolute;
     top: 45%;
     right: 3%;
 
-    width: 250px;
-    padding: 25px;
+    padding: 20px;
 
     background-color: #071C19;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 .barra.aberto {
     display: flex;
 }
 
-.logo h2 {
+.logo img {
     color: #C5A36A;
+    height: 50px;
+    background-color: #d4af37;
+    border-radius: 50px;
+    top: 0%;
 }
 
 
@@ -141,7 +150,7 @@ nav {
 }
 
 .conteudo-inicio h1 {
-    font-size: 7vw;
+    font-size: 6vw;
     color: #C5A36A;
     text-shadow: 3px 3px #0A100F;
 
@@ -153,13 +162,11 @@ nav {
 
 .conteudo-inicio h2 {
     text-align: center;
-    font-size: 3vw;
     color: #ffff;
 }
 
 .p2 {
     margin-top: 15px;
-    font-size: 20px;
     color: #fff;
     width: 50%;
     text-shadow: 3px 2px #0A100F;
@@ -267,7 +274,7 @@ img {
 
     margin-bottom: 10%;
     margin-top: 10%;
-    font-size: 2em;
+    font-size: 18px;
 
 }
 
@@ -421,6 +428,7 @@ img {
 }
 
 .conteudo3 {
+    margin-top: 0;
     position: relative;
     z-index: 2;
     padding: 90px 8% 90px 2%;
@@ -448,9 +456,9 @@ img {
 .conteudo3 h2,
 .conteudo3 h3,
 .cabecalho-impactos h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 500;
-    letter-spacing: -.035em;
+    font-family: "Permanent Marker", cursive;
+   
+   
 }
 
 .conteudo3 h2 {
@@ -587,43 +595,13 @@ img {
 }
 
 .frase-final em {
-    color: var(--ouro);
-}
-
-.form {
-    position: relative;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    left: 20%;
-    flex-direction: column;
-    width: 50%;
-    background-color: #50331E;
-    padding: 5%;
-    border-radius: 20%;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8),
-        0 0 25px rgba(255, 190, 0, 0.6),
-        0 0 45px rgba(255, 170, 0, 0.4);
-        cursor: pointer;
-}
-
-.form label {
-    margin: 10px;
-    color: #947642;
-    font-size: 3vw;
-}
-
-.form input {
-    padding: 10px;
-    border-radius: 20px;
+    color: #B58A4A;
 }
 
 footer {
+    font-family: "Permanent Marker", cursive;
     position: relative;
     top: 0%;
-    bottom: 50%;
     font-size: 8vw;
     color: #FFD700;
-    margin: 50px;
-
 }

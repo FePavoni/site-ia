@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+
     <title>O QUE É A IA</title>
 </head>
 
@@ -15,7 +20,7 @@
             <header>
                 <nav>
                     <div class="logo">
-                        <h2>I.A</h2>
+                      <img src="img/Perfil de Cabeça Cibernética Dourada.png" alt="cabeça cybernetica">
                     </div>
                     <button class="menu-hamburguer" id="menu">
                         <span></span>
@@ -24,10 +29,10 @@
                     </button>
 
                     <div class="barra" id="links">
-                        <a href="#Historia">História</a>
-                        <a href="#impactos">Impactos</a>
-                        <a href="#">O Futuro</a>
-                        <a href="#">Sobre</a>
+                        <a href="#conteudo-inicio">inicio</a>
+                        <a href="#conteudo-2">Funcuinamento</a>
+                        <a href="#conteudo-3">Revolução</a>
+                        <a href="pg2.html">Formulario</a>
                     </div>
                 </nav>
             </header>
@@ -39,7 +44,7 @@
         <div id="smooth-content">
             <section>
                 <div class="conteudo-inicio">
-                    <img data-speed=".2" src="img/Busto clássico em dissolução digital.png" alt="">
+                    <img class="aparecer" data-speed=".2" src="img/Busto clássico em dissolução digital.png" alt="">
                     <div data-lag=".2" class="text-1">
                         <p class="p1">
                             Você sabia que a inteligência artificial está transformando nossas vidas, revolucionando o
@@ -54,12 +59,12 @@
                             Ela deixou de ser apenas uma ideia do futuro. <br>
                             Ela já está transformando a forma como criamos, aprendemos e trabalhamos.
                         </p>
-                        <a class="btn" href="pg2.html">EXPLORAR</a>
+                        <a class="btn" href="#conteudo-2">EXPLORAR</a>
                     </div>
             </section>
 
 
-            <section class="inicio-2">
+            <section class="inicio-2" id="conteudo-2">
                 <div class="titulo">
                     <img data-lag=".2" class="braço-m" src="img/Conexão-braço-Máquina.png" alt="">
                     <h2 data-speed="1" class="aparecer"> COMO UMA </h2>
@@ -69,7 +74,7 @@
 
             </section>
 
-            <section id="História">
+            <section>
 
                 <div class="segunda-secao">
                     <div class="cards">
@@ -142,7 +147,7 @@
 
                 </div>
             </section>
-            <section class="aparecer" class="inicio-3" aria-labelledby="titulo-ia">
+            <section class="aparecer" class="inicio-3" id="conteudo-3">
                 <div class="hero-ia">
                     <div class="arte-ia">
                         <img data-speed="1" src="img/fotoia.png"
@@ -194,31 +199,6 @@
                     </ul>
 
             </section>
-
-            <section>
-                <main>
-
-                    <form action="conteudo-form">
-
-                        <div class="form">
-
-                            <label for="nome">Nome e Sobrenome</label>
-                            <input type="text" id="nome" class="input-padrao" required placeholder="Nome e sobrenome">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" class="input-padrao" required
-                                placeholder="seuemail@dominio.com">
-                            <label for="telefone">Telefone</label>
-                            <input type="tel" id="telefone" class="input-padrao" required placeholder="(99)99999-99999">
-
-                            <label for="mensagem">Mensagem</label>
-                            <textarea name="" id="mensagem" cols="68" rows="10"></textarea>
-
-
-                        </div>
-                    </form>
-                </main>
-            </section>
-
 
             <footer>
                 <p class="frase-final">O trabalho está mudando. <em>E o profissional também precisa acompanhar
