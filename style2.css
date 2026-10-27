@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #231d15;
     background-image: url(img/Viajante\ entre\ ruínas\ e\ estrelas.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 200%;
-    font-family:"Permanent Marker", cursive;
+    font-family: "Permanent Marker", cursive;
 }
+
 header {
     position: fixed;
     top: 0;
@@ -71,6 +76,7 @@ nav {
     background-color: #071C19;
     border-radius: 25px;
 }
+
 .barra {
     display: none;
 }
@@ -79,7 +85,7 @@ nav {
     display: flex;
 }
 
-.logo img{
+.logo img {
     color: #C5A36A;
     height: 50px;
     background-color: #d4af37;
@@ -117,12 +123,12 @@ nav {
 
 .form {
 
-    display:flex;
+    display: flex;
     text-align: center;
     justify-content: center;
     flex-direction: column;
     width: 50%;
-    
+
     margin: 0 auto;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -130,8 +136,8 @@ nav {
     padding: 5%;
     border-radius: 20%;
     box-shadow: 2px 2px 2px 2px black;
-      
-      
+
+
 }
 
 .form label {
@@ -146,8 +152,35 @@ nav {
     border-radius: 20px;
     box-shadow: 2px 2px black;
 }
-.form textarea{
+
+.form textarea {
 
     border-radius: 10px;
     box-shadow: 2px 2px black;
+}
+
+.btnf {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 30px;
+    background-color: #d4af37;
+    color: #26180F;
+    margin-top: 5%;
+
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnf:hover {
+    background-color: transparent;
+    color: #d4af37;
 }
